@@ -1,0 +1,449 @@
+.night{
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(219, 196, 217) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgb(217, 178, 178) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 1s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+
+
+.main_container {
+
+    width: 100%;
+    margin: auto;
+
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.logo {
+
+    padding-top: 10px;
+    border-radius: 00px;
+    width: 190px;
+    height: 80px;
+    margin-right: 300px;
+    margin-bottom: 40px;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+#fixed_logopart{
+    
+    display: flex;
+  justify-content: space-between;
+  
+    
+}
+#fixed_logo{
+   position: fixed;
+   bottom: 05%;
+   right: 30px;
+   gap: 20px;
+    display: grid;  justify-content: space-around;
+  margin-left: 84%;
+  
+    
+}
+
+span{
+  
+    
+display: grid;
+place-items: center;
+padding-top: 40px;
+display: none;
+}
+ 
+.nav {
+    position: sticky;
+    top: 00px;
+    background-color: rgb(245, 245, 242);
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+
+.options ul {
+ 
+    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+.options ul :hover{
+    cursor: pointer;
+    width: auto;
+    color: rgb(227, 136, 16);
+}
+
+
+ul li {
+    
+    list-style: none;
+}
+
+.container {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    padding: 20px;
+    background-color: rgb(232, 236, 240);
+
+}
+
+.top {
+    border-radius: 00px 30px 00px 30px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     
+    color: aliceblue;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+button {
+    
+    border-radius: 10px;
+    color: rgb(164, 164, 235);
+    height: 40px;
+    width: 150px;
+    background-color: rgb(169, 200, 240);
+    transition: all 3s ease-in;
+
+}
+
+button:hover {
+     
+    transform: translate(20px, 30px) rotate(360deg) scale(1.0) skew(00deg, 00deg);
+    cursor: pointer;
+    width: 150px;
+    background-color: rgb(233, 222, 207);
+}
+
+.mid_elements {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+
+.mid_elements div {
+    width: 12%;
+    box-shadow: 0px 9px 30px rgba(255, 149, 5, 0.3);
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: left;
+    border-radius: 30px 00px 00px 40px;
+    transition: all 3s ease-in;
+}
+ 
+.mid_elements div:nth-child(odd):hover {
+    position: relative;
+    bottom: 20px;
+    cursor: pointer;
+    width: 12%;
+    background-color:rgb(79, 226, 211)
+}
+.mid_elements div:nth-child(even):hover {
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+    width: 12%;
+    background-color:rgb(252, 243, 207)
+}
+
+
+
+.bottem_1 {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.bottem_1 div {
+    padding: 20px;
+    width: 35%;
+    box-shadow: 0px 9px 30px rgba(255, 149, 5, 0.1);
+    border-radius: 00px 40px 00px 40px;
+    transition: all 02s ease-in-out;
+}
+
+.bottem_1 div:hover {
+    cursor: pointer;
+    width: 35%;
+    background-color: rgb(196, 231, 121);
+}
+
+
+.bottem_2 {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+ 
+
+}
+.bottem_2 div {
+    padding: 20px;
+    width: 35%;
+    border-radius: 00px 40px 00px 40px;
+    transition: all 05s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+
+.bottem_2 div:hover {
+    cursor: pointer;
+    width: 35%;
+    background-color: rgb(176, 235, 228);
+}
+
+
+@media screen and (min-width:200px) and (max-width:480px) {
+
+
+    .main_container {
+        background-color: blueviolet;
+
+        width: 95%;
+        margin: auto;
+
+    }
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    img {
+        width: 170px;
+        height: 150px;
+        border-radius: 50px;
+    }
+ span{
+   display: block;
+    position: absolute;
+    top: -20px;
+  
+    right: 40px;
+ 
+    
+    font-size: 40px;
+ }
+    .logo {
+     
+        margin: 10px 00px 20px 20px;
+        border-radius: 00px;
+        width: 120px;
+        height: 60px;
+    }
+
+    .nav {
+
+        position: sticky;
+        top: 00px;
+        background-color: lightyellow;
+        font-size: 20px;
+        
+        border-radius: 10px;
+        display: block;
+        height: 100px;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      
+
+    }
+
+
+    .options ul {
+        visibility: hidden;
+        background-color: azure;
+        gap: 40px;
+        display: block;
+
+
+        padding: 20px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    }
+
+    .container {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+
+        background-color: rgb(232, 236, 240);
+
+
+    }
+
+    .top {
+        border-radius: 30px 00px 30px 00px;
+        height: 200px;
+       
+        color: aliceblue;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    }
+
+    button {
+        border-radius: 10px;
+        color: rgb(164, 164, 235);
+        background-color: rgb(169, 200, 240);
+        transition: all 3s ease-in;
+    }
+
+    .mid_elements {
+        display: block;
+        padding: 00px;
+    }
+
+
+
+    .mid_elements div {
+        width: auto;
+
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        display: grid;
+        place-items: center;
+        transition: all 3s ease-in-out;
+    }
+    .mid_elements div:hover {
+       
+        width: auto;
+        background-color: rgb(194, 234, 234);
+
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+       
+         
+    }
+
+    .bottem_1 {
+        display: block;
+
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .bottem_1 div {
+        margin-bottom: 100px;
+        padding: 20px;
+        width: 90%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    }
+
+    .bottem_2 {
+        display: block;
+        justify-content: space-around;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .bottem_2 div {
+        padding: 20px;
+        width: 90%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    }
+    #fixed_logopart{
+    
+        display: flex;
+      justify-content: space-between;
+      
+        
+    }
+    #fixed_logo{
+       position: fixed;
+       bottom: 5%;
+       left: -20px;
+       gap: 20px;
+        display: grid;  justify-content: space-around;
+     
+      
+        
+    }
+    #fixed_logo img{
+        width: 100%;
+        height: 40px;
+    }
+
+}
