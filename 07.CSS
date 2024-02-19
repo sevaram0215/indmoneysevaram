@@ -192,7 +192,8 @@ button {
 
 button:hover {
      
-    transform: translate(20px, 30px) rotate(360deg) scale(1.0) skew(00deg, 00deg);
+   
+    width: 170px;
     cursor: pointer;
     width: 150px;
     background-color: rgb(233, 222, 207);
@@ -212,8 +213,8 @@ button:hover {
     padding-left: 20px;
     padding-top: 20px;
     text-align: left;
-    border-radius: 30px 00px 00px 40px;
-    transition: all 3s ease-in;
+    border-radius: 30px 00px 20px 35px;
+    transition: all 2s ease-in;
 }
  
 .mid_elements div:nth-child(odd):hover {
@@ -221,11 +222,13 @@ button:hover {
     bottom: 20px;
     cursor: pointer;
     width: 12%;
+    transform: scaleX(1.2);
     background-color:rgb(79, 226, 211)
 }
 .mid_elements div:nth-child(even):hover {
     position: relative;
     top: 20px;
+    transform: scaleX(1.2);
     cursor: pointer;
     width: 12%;
     background-color:rgb(252, 243, 207)
@@ -274,6 +277,7 @@ button:hover {
 
 
 .bottem_2 div:hover {
+    transform: scale3d(1.5);
     cursor: pointer;
     width: 35%;
     background-color: rgb(176, 235, 228);
@@ -379,22 +383,30 @@ button:hover {
 
 
     .mid_elements div {
-        width: auto;
-
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        width: 90%;
+    gap: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(128, 32, 32, 0.22) 0px 10px 10px;
         display: grid;
         place-items: center;
         transition: all 3s ease-in-out;
     }
-    .mid_elements div:hover {
-       
-        width: auto;
-        background-color: rgb(194, 234, 234);
-
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-       
-         
+    .mid_elements div:nth-child(odd):hover {
+        position: relative;
+        bottom: 20px;
+        cursor: pointer;
+        height: 240px;
+        width: 90%;
+        background-color:rgb(79, 226, 211)
     }
+    .mid_elements div:nth-child(even):hover {
+        position: relative;
+        top: 20px;
+        cursor: pointer;
+        width: 90%;
+        background-color:rgb(252, 243, 207)
+    }
+    
+   
 
     .bottem_1 {
         display: block;
@@ -410,6 +422,11 @@ button:hover {
         width: 90%;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     }
+    .bottem_1 div:hover {
+        margin-bottom: 100px;
+        padding: 20px;
+        width: 90%; 
+    }
 
     .bottem_2 {
         display: block;
@@ -423,6 +440,11 @@ button:hover {
         padding: 20px;
         width: 90%;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    }
+    .bottem_2 div:hover {
+        padding: 20px;
+        width: 90%;
+      
     }
     #fixed_logopart{
     
